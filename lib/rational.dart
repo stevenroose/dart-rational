@@ -307,7 +307,7 @@ abstract class Rational<T extends dynamic/*int|BigInt*/> implements Comparable<R
       x = x * _INT_10;
     }
     x = x ~/ _denominator;
-    return x.toString().length;
+    return x.abs().toString().length;
   }
 
   /**
